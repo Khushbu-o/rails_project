@@ -1,0 +1,27 @@
+<h1 class="textfont ">Article Creation Form</h1>
+<br>
+<br>
+
+
+
+<%= form_with scope: :article, url: article_index_path, local: true do |f| %>
+
+
+    <%= f.label :Title , :class => "title1" %>
+    <%= f.text_field :title , :class =>"form-control" %><br><br>
+
+    <%= f.label :Description, :class => "title1"%>
+    <%= f.text_area :description ,:class =>"form-control" %><br><br>
+
+    <%= f.label :User_id, :class => "title1"%>
+    <%= f.text_field :user_id ,:class =>"form-control" %><br><br>
+
+
+
+    <%= f.submit  :class => "btn btn-success"%>
+
+
+
+    
+<% end %>    
+

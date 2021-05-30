@@ -1,0 +1,33 @@
+
+
+<h1 class="textfont"><b>Articles</b></h1>
+
+<%= will_paginate @articles %>
+
+<% @articles.each do |i| %>
+<div class="card">
+  <div class="card-header">
+    By <b><%= i.user.username %></b>
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title"><b>Title:</b><%= i.title %></h5>
+    <b><p class="card-text">Description:</b><%= i.description %></p>
+    <%= link_to 'Delete', article_path(i.id),method: :delete,class: "btn btn-outline-danger" %>
+    <%= link_to 'Edit', edit_article_path(i.id),class: "btn btn-outline-primary" %>
+    <%= link_to 'Show', article_path(i.id),class: "btn btn-outline-success" %>
+  </div>
+  
+</div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+

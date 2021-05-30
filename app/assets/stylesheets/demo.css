@@ -1,0 +1,77 @@
+body{
+    background-color:cornflowerblue;
+
+}
+.w3-content{
+    background-color: pink;
+}
+.w3-padding{
+    background-color: black;
+}
+.card{
+    background-color:pink;
+}
+
+.navbar-custom{
+    background-color: black;
+    
+}
+
+
+.nav-link {
+    color: white;
+}
+
+.navbar-brand{
+    color: yellow;
+}
+
+.w3-left,.w3-margin-right{
+    width:50px;
+   
+}
+.title{
+    color:white;
+}
+
+.textfont{
+    font-family: "Brush Script MT", Lucida Handwriting, cursive;
+    font-size: 70px;
+    color:crimson
+}
+
+.card-title,.card-text,.card-header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title1{
+    font-weight: bold;
+}
+
+.form-control{
+    width: 50%;
+}
+
+.form-control1{
+    width: 40%;
+}
+
+.btn{
+    background-color:yellowgreen;
+    color: black;
+
+}
+
+.text1{
+    color:maroon;
+}
+
+.textcolor{
+    color:seagreen;
+}
+.textcolor1{
+    color:gold;
+}
+.bgcolour{
+    background-color:lightcoral;
+}

@@ -1,0 +1,19 @@
+<h1 class="textfont">Editing Article</h1>
+
+<br>
+<%= form_with(model: @article, local: true) do |f| %>
+
+    <%= f.label :Title,:class=>"title1" %>
+    <%= f.text_field :title ,:class=>"form-control1" %><br><br>
+<br>
+    <%= f.label :Description ,:class=>"title1"%>
+    <%= f.text_area :description ,:class=>"form-control1" %><br><br>
+
+
+    <%= f.submit :class=>"btn btn-success" %>
+    
+<% end %>    
+
+
+
+  

@@ -1,0 +1,30 @@
+<h2 class="textfont ">Sign up</h2>
+<br>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email , :class => "title1"%><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",:class =>"form-control1" %>
+  </div>
+<br>
+  <div class="field">
+    <%= f.label :password , :class => "title1"%>
+    <% if @minimum_password_length %>
+    <em class="title1">(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password",:class =>"form-control1" %>
+  </div>
+<br>
+  <div class="field">
+    <%= f.label :password_confirmation ,:class => "title1"%><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password",:class =>"form-control1" %>
+  </div>
+<br>
+  <div class="actions">
+    <%= f.submit "Sign up" ,:class =>"btn" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
